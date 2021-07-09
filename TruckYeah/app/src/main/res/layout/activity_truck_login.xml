@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jake.truckyeah.LoginTruckActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="208dp"
+        android:layout_height="122dp"
+        android:layout_above="@+id/etTruckEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTruckUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:text="Username"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTruckPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvTruckUsername"
+        android:layout_alignRight="@+id/tvTruckUsername"
+        android:layout_below="@+id/tvTruckUsername"
+        android:layout_marginTop="19dp"
+        android:text="Password"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <EditText
+        android:id="@+id/etTruckEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTruckUsername"
+        android:layout_alignBottom="@+id/tvTruckUsername"
+        android:layout_alignLeft="@+id/etTruckPassword"
+        android:layout_alignStart="@+id/etTruckPassword"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <EditText
+        android:id="@+id/etTruckPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTruckPassword"
+        android:layout_alignBottom="@+id/tvTruckPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <Button
+        android:id="@+id/bTruckLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTruckPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Login"
+        tools:ignore="MissingConstraints" />
+
+
+    </RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jake.truckyeah.EditTruckActivity">
+
+    <!--<Button-->
+    <!--android:id="@+id/currentOrdersButton"-->
+    <!--android:layout_width="124dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Orders"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/menuButton"-->
+    <!--android:layout_width="124dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Menu Items"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/truckInfo"-->
+    <!--android:layout_width="124dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Edit Info"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/menuButton"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/truckListButton"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_above="@+id/etAddressEdit"
+        android:layout_marginBottom="210dp"
+        android:layout_marginStart="8dp"
+        android:layout_toLeftOf="@+id/etPasswordEdit"
+        android:layout_toStartOf="@+id/etPasswordEdit"
+        android:text="Phone Number:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/password"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="8dp"
+        android:text="Address:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/number"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/truckname"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="8dp"
+        android:text="Password:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bSubmitEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPasswordEdit"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etTruckNameEdit"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etAddressEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/etAddressEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etPhoneNumberEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/address" />
+
+    <EditText
+        android:id="@+id/etPhoneNumberEdit"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etAddressEdit"
+        android:layout_marginBottom="212dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number" />
+
+    <ImageButton
+        android:id="@+id/bLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="354dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/currentOrdersButton"
+            android:layout_width="63dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_restaurant_menu_black_24dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="452dp" />
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="63dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toStartOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/currentOrdersButton"
+            app:srcCompat="@drawable/ic_assignment_black_24dp"
+            tools:layout_editor_absoluteY="460dp" />
+
+        <ImageButton
+            android:id="@+id/truckInfo"
+            android:layout_width="63dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_mode_edit_black_24dp"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="387dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Current Orders"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="        My Menu"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Truck"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "632056722600",
+    "firebase_url": "https://truckyear-dbf84.firebaseio.com",
+    "project_id": "truckyear-dbf84",
+    "storage_bucket": "truckyear-dbf84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632056722600:android:b8c79e2e7ffe750f",
+        "android_client_info": {
+          "package_name": "com.example.jake.truckyeah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632056722600-oka50v7bn9p5bhcsfvqbunao32ivohh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnCvGFrWaVgAY46tXFKCwM1jUc_Hg1maA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

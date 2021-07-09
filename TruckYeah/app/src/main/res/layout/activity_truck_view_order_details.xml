@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TruckViewOrderDetailsActivity">
+
+    <TextView
+        android:id="@+id/orderFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order for: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+    <ListView
+        android:id="@+id/ordersList"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/orderFor"></ListView>
+
+    <Button
+        android:id="@+id/completeOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPLETE ORDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordersList" />
+
+</android.support.constraint.ConstraintLayout>

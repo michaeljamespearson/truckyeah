@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jake.truckyeah.RegistrationActivityName">
+
+    <TextView
+        android:id="@+id/tvPasswordRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:layout_marginLeft="32dp"
+        android:text="Password:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/bSubmitRegistration"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsernameRegistration"
+        android:layout_width="187dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="120dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etUsernameConfirmation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="@+id/tvUsernameRegistration" />
+
+    <Button
+        android:id="@+id/bSubmitRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginLeft="8dp"
+
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="318dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbNewUser"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New Individual User" />
+
+        <RadioButton
+            android:id="@+id/rbNewTruck"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New Truck Owner" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="136dp"
+        android:layout_marginTop="24dp"
+        android:text="Please Select One of the Following:"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvUsernameConfirmation"
+        android:layout_width="135dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="28dp"
+        android:text="Confirm Username"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPasswordRegistration"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsernameRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="28dp"
+        android:text="Username"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvUsernameConfirmation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsernameConfirmation"
+        android:layout_width="187dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="116dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordRegistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="@+id/tvUsernameConfirmation" />
+
+    <EditText
+        android:id="@+id/etPasswordRegistration"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="84dp"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/bSubmitRegistration"
+        app:layout_constraintStart_toEndOf="@+id/tvPasswordRegistration" />
+
+
+
+    </android.support.constraint.ConstraintLayout>

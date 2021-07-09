@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TruckYeah</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="view_cart">View Cart</string>
+    <string name="title_activity_view_trucks_map">Map</string>
+</resources>
+
